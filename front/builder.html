@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForITERA | Formulirnya ITERA</title>
+    <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+    <header>
+        <h1>ForITERA</h1>
+        <nav>
+            <button><a href="file:///D:/Abi/Informatics/HTML/ForITERA/front/home.html">Home</a></button>
+            <button><a href="file:///D:/Abi/Informatics/HTML/ForITERA/front/view.html">Daftar Respon</a></button>
+        </nav>
+    </header>
+    <main>
+        <input id="title" placeholder="Judul Form"><br><br>
+        <textarea id="description" placeholder="Deskripsi"></textarea><br><br>
+
+        <h3>Tambah Pertanyaan</h3>
+        <div id="question"></div>
+        <div id="addQuestion">
+            <input id="label" placeholder="Label pertanyaan">
+            <select id="type">
+                <option value="text">Teks</option>
+                <option value="email">Email</option>
+                <option value="textarea">Textarea</option>
+            </select>
+            <button id="addField">Tambah</button>
+
+            <button id="saveForm">Simpan Form</button>
+        </div>
+    </main>
+    <script src="builder.js"></script>
+</body>
+</html>

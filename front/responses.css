@@ -1,0 +1,177 @@
+:root {
+    --bg-white: #e6e6e6;
+    --bg-red: #da251c;
+    --bg-gold: #c8aa51;
+    --text-dark: #222;
+    --text-light: #fff;
+    --radius: 12px;
+}
+
+/* Reset style untuk semua atribut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+    background-color: var(--bg-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header website */
+header {
+    width: 100%;
+    background: var(--bg-red);
+    color: var(--text-light);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+/* Navigasi web */
+header nav {
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/* Button yang ada di navigasi website */
+nav button {
+    margin: 0;
+    padding: 25px 1.5rem;
+    border-radius: 0;
+    border: none;
+    background: var(--bg-red);
+    cursor: pointer;
+    transition: background 0.25s ease;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav button:hover {
+    background: var(--bg-gold);
+}
+
+nav button a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+nav button:hover a {
+    color: var(--text-dark);
+}
+
+/* Main */
+main {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 40px;
+    margin-top: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-top: 10px solid var(--bg-red);
+    overflow-x: auto;
+}
+
+/* Form title */
+#formTitle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#formTitle h2 {
+    color: var(--bg-red);
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+#formTitle p {
+    color: var(--bg-gold);
+    font-size: 1rem;
+}
+
+/* Untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: var(--radius);
+    overflow: hidden;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: var(--bg-red);
+    color: var(--text-light);
+}
+
+thead th {
+    padding: 0.9rem 1rem;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 3px solid var(--bg-gold);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tbody td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #ddd;
+    color: var(--text-dark);
+}
+
+tbody tr:hover {
+    background-color: #ffe8cc;
+    transition: background 0.2s ease;
+}
+
+/* Masih dalam pengembangan */
+@media (max-width: 700px) {
+    main {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    thead th, 
+    tbody td {
+        padding: 0.7rem;
+    }
+
+    #formTitle h2 {
+        font-size: 1.4rem;
+    }
+
+    #formTitle p {
+        font-size: 0.9rem;
+    }
+}

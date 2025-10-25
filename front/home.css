@@ -1,0 +1,147 @@
+:root {
+    --bg-white: #e6e6e6;
+    --bg-red: #da251c;
+    --bg-gold: #c8aa51;
+    --text-dark: #222;
+    --text-light: #fff;
+    --radius: 12px;
+}
+
+/* Reset style untuk semua atribut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+    background-color: var(--bg-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header website */
+header {
+    width: 100%;
+    background: var(--bg-red);
+    color: var(--text-light);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+/* Navigasi website */
+header nav {
+    margin: 0 auto 0 25px;
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    margin: 0;
+    padding: 25px 1.5rem;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Main */
+main {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Daftar form */
+#fieldList {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#fieldList li {
+    background: var(--bg-gold);
+    color: var(--text-dark);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+}
+
+#fieldList li:hover {
+    transform: translateY(-3px);
+    background: var(--bg-red);
+    color: var(--text-light);
+}
+
+#fieldList li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Button */
+button {
+    background: var(--bg-red);
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background: var(--bg-gold);
+}
+
+button a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+button:hover a {
+    color: var(--text-dark);
+}
+
+/* Masih dalam pengembangan */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    #fieldList li {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+    }
+}

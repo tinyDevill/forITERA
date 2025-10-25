@@ -1,0 +1,178 @@
+:root {
+    --bg-white: #e6e6e6;
+    --bg-red: #da251c;
+    --bg-gold: #c8aa51;
+    --text-dark: #222;
+    --text-light: #fff;
+    --radius: 12px;
+}
+
+/* Reset style untuk semua atribut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+    background-color: var(--bg-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header website */
+header {
+    width: 100%;
+    background: var(--bg-red);
+    color: var(--text-light);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+header nav {
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigasi website */
+nav button {
+    margin: 0;
+    padding: 25px 1.5rem;
+    border-radius: 0;
+    border: none;
+    background: var(--bg-red);
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+nav button:hover {
+    background: var(--bg-gold);
+}
+
+nav button a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav button:hover a {
+    color: var(--text-dark);
+}
+
+/* Main */
+main {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+/* Pembuat form */
+input, textarea, select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+    border-color: var(--bg-gold);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    transition: border-color 0.25s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--bg-red);
+}
+
+/* Tambah Pertanyaan */
+#addQuestion {
+    width: 100%;
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Field untuk melihat pertanyaan yang telah dibuat */
+#question {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.form-field {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Button */
+button {
+    background: var(--bg-red);
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+button:hover {
+    background: var(--bg-gold);
+    color: var(--text-dark);
+}
+
+/* Masih dalam pengembangan */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    input, textarea, select {
+        font-size: 0.95rem;
+    }
+
+    #fieldList li {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+    }
+}
