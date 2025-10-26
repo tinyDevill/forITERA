@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 // 4️⃣ Koneksi ke MongoDB
-mongoose.connect('mongodb+srv://abisholihan1_db_user:g4mp4ng@cluster0.nu1xcet.mongodb.net/?appName=Cluster0?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('✅ Terhubung ke MongoDB'))
     .catch(err => console.log('❌ Gagal terhubung ke MongoDB:', err));
 
